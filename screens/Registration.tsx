@@ -155,7 +155,7 @@ const styles = StyleSheet.create({
   passwordStrengthContainer: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-    height: 8,
+    height: 5,
     marginBottom: 10,
   },
   passwordStrengthBar: {

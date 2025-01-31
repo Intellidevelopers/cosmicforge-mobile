@@ -92,10 +92,12 @@ const OtpVerification = () => {
     </TouchableOpacity>
 
     {/* Log In Link */}
-    <Text style={styles.loginText}>
-      Already have an account?{' '}
-      <Text style={styles.loginLink}>Log In</Text>
-    </Text>
+    <View style={styles.loginBtn}>
+      <Text style={styles.loginText}>Already have an account?</Text>
+      <TouchableOpacity onPress={() => navigation.navigate('Login')}>
+        <Text style={styles.loginLink}>Log In</Text>
+      </TouchableOpacity>
+    </View>
   </View>
 </ScrollView>
 
@@ -177,14 +179,21 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: '600',
   },
-  loginText: {
-    fontSize: 14,
-    color: '#777777',
-    textAlign: 'center',
+  loginBtn: {
+    marginTop: 20,
+    alignItems: 'center',
+    flexDirection: 'row',
+    alignSelf: 'center',
+    gap: 6
+
   },
   loginLink: {
-    color: colors.primary,
+    color: '#6C63FF',
     fontWeight: '600',
+    textAlign: 'center'
   },
+  loginText:{
+    textAlign: 'center'
+  }
 });
 

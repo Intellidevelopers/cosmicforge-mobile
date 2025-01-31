@@ -2,8 +2,13 @@ import React from 'react';
 import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import colors from '../components/colors'; // Ensure colors file is configured
+import { useNavigation } from "@react-navigation/native";
+import { RootStackParamList } from '../components/navigation'; // Adjust the path if needed
+import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 
 const SuccessScreen = () => {
+const navigation = useNavigation<NativeStackNavigationProp<RootStackParamList, 'Onboarding'>>();
+  
   return (
     <View style={styles.container}>
       {/* Header Section */}
@@ -30,8 +35,8 @@ const SuccessScreen = () => {
         <TouchableOpacity style={styles.primaryButton}>
           <Text style={styles.primaryButtonText}>Profile Set Up</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.secondaryButton}>
-          <Text style={styles.secondaryButtonText}>Home</Text>
+        <TouchableOpacity style={styles.secondaryButton} onPress={() => navigation.navigate('Login')}>
+          <Text style={styles.secondaryButtonText}>Login</Text>
         </TouchableOpacity>
       </View>
     </View>

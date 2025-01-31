@@ -17,7 +17,7 @@ const colors = {
   
     // Password strength colors
     weak: "#dc3545", // Red for weak passwords
-    fair: "#272EA766", // Yellow for fair passwords
+    fair: "#E2E4FC", // Yellow for fair passwords
     strong: "#28a745", // Green for strong passwords
     input: "#F0F1FF",
     disabled: "#D3D3D3"

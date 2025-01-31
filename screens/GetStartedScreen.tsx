@@ -64,10 +64,10 @@ const GetStartedScreen = () => {
         </View>
 
         {/* Login Link */}
-        <Text style={styles.loginText}>
-          Already have an account?{' '}
+        <TouchableOpacity style={styles.loginLinkContainer} onPress={() => navigation.navigate('Login')}>
+          <Text>Already have an account?</Text>
           <Text style={styles.loginLink}>Log In</Text>
-        </Text>
+        </TouchableOpacity>
 
         {/* Terms */}
         <Text style={styles.termsText}>
@@ -145,11 +145,12 @@ const styles = StyleSheet.create({
     borderRadius: 8,
     alignItems: 'center',
   },
-  loginText: {
-    fontSize: 14,
-    color: '#777777',
-    marginBottom: 10,
-    top: -50,
+  loginLinkContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginBottom: 20,
+    top: -30,
+    gap: 6,
   },
   loginLink: {
     color: colors.primary,

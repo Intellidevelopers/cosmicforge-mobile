@@ -78,10 +78,10 @@ const EmailRegister = () => {
       </View>
 
       {/* Log In Link */}
-      <Text style={styles.loginText}>
-        Already have an account?{' '}
+      <TouchableOpacity style={styles.loginBtn} onPress={() => navigation.navigate('Login')}>
+        <Text style={styles.loginText}>Already have an account?</Text>
         <Text style={styles.loginLink}>Log In</Text>
-      </Text>
+      </TouchableOpacity>
     </View>
   );
 };
@@ -139,7 +139,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     marginBottom: 30,
-    marginTop: 100
+    marginTop: 'auto'
   },
   divider: {
     flex: 1,
@@ -163,13 +163,21 @@ const styles = StyleSheet.create({
     borderRadius: 8,
     alignItems: 'center',
   },
-  loginText: {
-    fontSize: 14,
-    color: '#000',
-    textAlign: 'center',
+  loginBtn: {
+    marginTop: 20,
+    alignItems: 'center',
+    flexDirection: 'row',
+    alignSelf: 'center',
+    gap: 6,
+    marginBottom: 10
+
   },
   loginLink: {
     color: '#6C63FF',
     fontWeight: '600',
+    textAlign: 'center'
   },
+  loginText:{
+    textAlign: 'center'
+  }
 });

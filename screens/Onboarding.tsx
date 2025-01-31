@@ -60,7 +60,7 @@ const Onboarding = () => {
     if (currentIndex < slides.length - 1 && flatListRef.current) {
       flatListRef.current.scrollToIndex({ index: currentIndex + 1 });
     } else if (currentIndex === slides.length - 1) {
-      navigation.navigate("AccountType"); // Replace with your target route
+      navigation.navigate("GetStartedScreen"); // Replace with your target route
     }
   };
   

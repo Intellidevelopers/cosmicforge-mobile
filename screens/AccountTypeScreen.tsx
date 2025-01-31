@@ -17,7 +17,7 @@ const AccountTypeScreen = () => {
     Toast.show({
       type: 'success',
       text1: 'Account Type',
-      text2: `You want to register as a ${option}`,
+      text2: `You are registering as a ${option}`,
     });
   };
 
@@ -70,7 +70,7 @@ const AccountTypeScreen = () => {
         disabled={!selectedOption} // Disable the button if no option is selected
         onPress={() => navigation.navigate('GetStartedScreen')}
       >
-        <Text style={styles.getStartedButtonText}>Sign Up</Text>
+        <Text style={styles.getStartedButtonText}>Continue</Text>
       </TouchableOpacity>
 
       <Toast />
