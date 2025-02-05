@@ -86,7 +86,7 @@ const OtpVerification = () => {
         isButtonDisabled && styles.continueButtonDisabled,
       ]}
       disabled={isButtonDisabled}
-      onPress={() => navigation.navigate('Registration')}
+      onPress={() => navigation.navigate('Category')}
     >
       <Text style={styles.continueButtonText}>Continue</Text>
     </TouchableOpacity>

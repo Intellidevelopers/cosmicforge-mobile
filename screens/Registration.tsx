@@ -58,7 +58,9 @@ const Registration = () => {
       <Text style={styles.subtitle}>Start providing Healthcare services</Text>
 
       {/* Input Fields */}
-      <TextInput style={styles.input} placeholder="Full Name" />
+      <TextInput style={styles.input} placeholder="First Name" />
+      <TextInput style={styles.input} placeholder="Last Name" />
+      
       <TextInput
         style={styles.input}
         placeholder="Password"

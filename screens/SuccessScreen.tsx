@@ -12,9 +12,9 @@ const navigation = useNavigation<NativeStackNavigationProp<RootStackParamList, '
   return (
     <View style={styles.container}>
       {/* Header Section */}
-      <Text style={styles.header}>Welcome!</Text>
+      <Text style={styles.header}>Success!</Text>
       <Text style={styles.subtitle}>
-        Let’s get you started by setting up your profile.
+        Registration successful, please login to upload your document.
       </Text>
 
       {/* Image with Gradient */}
@@ -32,11 +32,8 @@ const navigation = useNavigation<NativeStackNavigationProp<RootStackParamList, '
 
       {/* Buttons */}
       <View style={styles.buttonContainer}>
-        <TouchableOpacity style={styles.primaryButton}>
-          <Text style={styles.primaryButtonText}>Profile Set Up</Text>
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.secondaryButton} onPress={() => navigation.navigate('Login')}>
-          <Text style={styles.secondaryButtonText}>Login</Text>
+        <TouchableOpacity style={styles.primaryButton} onPress={() => navigation.navigate('Login')}>
+          <Text style={styles.primaryButtonText}>Continue to Login</Text>
         </TouchableOpacity>
       </View>
     </View>

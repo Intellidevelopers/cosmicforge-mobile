@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { View, Text, Button } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import SplashScreen from './screens/SplashScreen';
@@ -17,8 +16,6 @@ import PasswordResetVerification from './screens/PasswordResetVerification';
 import ChangePassword from './screens/ChangePassword';
 import PasswordResetSuccess from './screens/PasswordResetSuccess';
 import HomeTab from './components/HomeTab';
-import AppointmentsScreen from './screens/AppointmentsScreen';
-import { StatusBar } from 'expo-status-bar';
 import ChatScreen from './screens/ChatScreen';
 import VideoCall from './screens/VideoCall';
 import VoiceCall from './screens/VoiceCall';
@@ -40,6 +37,7 @@ import ChatBot from './screens/ChatBot';
 import LiveChat from './screens/LiveChat';
 import HelpCenter from './screens/HelpCenter';
 import Notification from './screens/Notification';
+import Category from './screens/Category';
 
 const Stack = createNativeStackNavigator();
 
@@ -83,6 +81,7 @@ export default function App() {
         <Stack.Screen name="LiveChat" component={LiveChat} options={{ headerShown: false }} />
         <Stack.Screen name="HelpCenter" component={HelpCenter} options={{ headerShown: false }} />
         <Stack.Screen name="Notification" component={Notification} options={{ headerShown: false }} />
+        <Stack.Screen name="Category" component={Category} options={{ headerShown: false }} />
       </Stack.Navigator>
     </NavigationContainer>
   );

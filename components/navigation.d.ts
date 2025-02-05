@@ -40,4 +40,5 @@ export type RootStackParamList = {
     LiveChat: undefined; // Define all your screen names and their parameters
     HelpCenter: undefined; // Define all your screen names and their parameters
     Notification: undefined; // Define all your screen names and their parameters
+    Category: undefined; // Define all your screen names and their parameters
   };
